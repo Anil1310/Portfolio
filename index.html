@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Anil Kumar Chahar - Data Analyst, Automation Specialist & Software Developer at Udaan.com.">
+  <meta name="author" content="Anil Kumar Chahar">
+  <meta property="og:title" content="Anil Kumar Chahar | Portfolio">
+  <meta property="og:description" content="Data Analytics, Python Automation, and Full-Stack Engineering Showcase">
+  <meta property="og:type" content="website">
+  <title>Anil Kumar Chahar | Data Analyst & Automation Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <div class="glow-orb orb-3" aria-hidden="true"></div>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <span class="logo-bracket">&lt;</span><span class="logo-text">Anil</span><span class="logo-accent">.dev</span><span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="nav-links" id="nav-menu">
+        <a href="#about" class="nav-link" id="link-about">About</a>
+        <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+        <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+        <a href="#experience" class="nav-link" id="link-experience">Experience</a>
+        <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://github.com/Anil1310" target="_blank" rel="noopener noreferrer" class="btn-github" id="github-header-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="badge-status" id="hero-badge">
+          <span class="status-dot"></span> Available for Data & Automation Projects
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          Hi, I'm <span class="gradient-text">Anil Kumar Chahar</span>
+        </h1>
+        <p class="hero-subtitle" id="hero-subtitle">
+          Data Analyst &amp; Automation Engineer at <strong class="highlight">Udaan.com</strong>.
+          I specialize in transforming complex data workflows into automated, high-impact pipelines, modern dashboards, and intelligent business tools.
+        </p>
+
+        <div class="hero-tags">
+          <span class="tag">🐍 Python</span>
+          <span class="tag">📊 SQL &amp; BigQuery</span>
+          <span class="tag">⚡ Excel &amp; VBA</span>
+          <span class="tag">☁️ Google Cloud &amp; Apps Script</span>
+          <span class="tag">🌐 Web Solutions</span>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="btn-explore-projects">
+            <span>Explore Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="btn-get-in-touch">
+            <span>Get in Touch</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="glass-terminal">
+          <div class="terminal-header">
+            <span class="term-btn term-close"></span>
+            <span class="term-btn term-min"></span>
+            <span class="term-btn term-max"></span>
+            <span class="term-title">anil@macbook ~ dev-metrics</span>
+          </div>
+          <div class="terminal-body">
+            <p class="term-line"><span class="t-prompt">$</span> whoami</p>
+            <p class="t-out">Anil Kumar Chahar | India</p>
+            <p class="term-line"><span class="t-prompt">$</span> current_role --company</p>
+            <p class="t-out accent">Data Analyst @ Udaan.com</p>
+            <p class="term-line"><span class="t-prompt">$</span> cat expertise.json</p>
+            <pre class="t-json">{
+  "core": ["Data Analysis", "Automation", "ETL"],
+  "languages": ["Python", "SQL", "JavaScript", "VBA"],
+  "focus": "Efficiency, Scalability & Automation",
+  "status": "Ready to Deploy 🚀"
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="section-header">
+        <span class="section-tag">OVERVIEW</span>
+        <h2 class="section-title">Turning Raw Data into Actionable Intelligence</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass">
+          <div class="card-icon">📈</div>
+          <h3>Data Analytics &amp; Insights</h3>
+          <p>Extracting deep operational insights from complex data sets using advanced SQL, Python libraries, and interactive visualization frameworks to drive strategic decisions.</p>
+        </div>
+        <div class="about-card glass">
+          <div class="card-icon">⚡</div>
+          <h3>End-to-End Automation</h3>
+          <p>Eliminating hours of manual reporting through automated Python scripts, scheduled background pipelines, Google Apps Script (Clasp), and robust Excel macros.</p>
+        </div>
+        <div class="about-card glass">
+          <div class="card-icon">🛠️</div>
+          <h3>Custom Tools &amp; Web Apps</h3>
+          <p>Engineering specialized utility applications, document processing tools, and lightweight dashboards that streamline day-to-day enterprise workflows.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="section-header">
+        <span class="section-tag">TECH STACK</span>
+        <h2 class="section-title">Tools &amp; Technologies</h2>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill-category glass">
+          <h3 class="category-title">Data &amp; Analytics</h3>
+          <div class="skills-list">
+            <div class="skill-pill"><span>SQL (MySQL / BigQuery)</span><div class="level-bar"><div class="fill" style="width: 95%;"></div></div></div>
+            <div class="skill-pill"><span>Python (Pandas, NumPy)</span><div class="level-bar"><div class="fill" style="width: 90%;"></div></div></div>
+            <div class="skill-pill"><span>Data Visualization</span><div class="level-bar"><div class="fill" style="width: 88%;"></div></div></div>
+            <div class="skill-pill"><span>Business Intelligence</span><div class="level-bar"><div class="fill" style="width: 85%;"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category glass">
+          <h3 class="category-title">Automation &amp; Scripting</h3>
+          <div class="skills-list">
+            <div class="skill-pill"><span>Python Automation &amp; Scraping</span><div class="level-bar"><div class="fill" style="width: 92%;"></div></div></div>
+            <div class="skill-pill"><span>Google Apps Script / Clasp</span><div class="level-bar"><div class="fill" style="width: 88%;"></div></div></div>
+            <div class="skill-pill"><span>Excel 365 &amp; Advanced Formulas</span><div class="level-bar"><div class="fill" style="width: 95%;"></div></div></div>
+            <div class="skill-pill"><span>VBA Macros &amp; Tooling</span><div class="level-bar"><div class="fill" style="width: 90%;"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category glass">
+          <h3 class="category-title">Engineering &amp; Cloud</h3>
+          <div class="skills-list">
+            <div class="skill-pill"><span>Git &amp; GitHub Version Control</span><div class="level-bar"><div class="fill" style="width: 88%;"></div></div></div>
+            <div class="skill-pill"><span>Google Cloud Ecosystem</span><div class="level-bar"><div class="fill" style="width: 82%;"></div></div></div>
+            <div class="skill-pill"><span>Web Apps (HTML5/CSS3/JS)</span><div class="level-bar"><div class="fill" style="width: 85%;"></div></div></div>
+            <div class="skill-pill"><span>API Integrations &amp; Webhooks</span><div class="level-bar"><div class="fill" style="width: 84%;"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="section-header">
+        <span class="section-tag">SHOWCASE</span>
+        <h2 class="section-title">Featured Solutions</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card glass">
+          <div class="project-header">
+            <span class="project-badge">Analytics &amp; Pipelines</span>
+            <div class="project-links">
+              <a href="https://github.com/Anil1310" target="_blank" rel="noopener noreferrer" title="View Source">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Enterprise Automated Reporting Engine</h3>
+          <p class="project-desc">Engineered an automated data extraction and transformation pipeline aggregating operational metrics, reducing manual report preparation time by 90%.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>Pandas</span><span>SQL</span><span>Email API</span>
+          </div>
+        </article>
+
+        <article class="project-card glass">
+          <div class="project-header">
+            <span class="project-badge">Automation Suite</span>
+            <div class="project-links">
+              <a href="https://github.com/Anil1310" target="_blank" rel="noopener noreferrer" title="View Source">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Spreadsheet &amp; Workflow Optimizer</h3>
+          <p class="project-desc">Suite of advanced VBA and Google Apps Script solutions deployed across multi-user environments, streamlining reconciliation, inventory audits, and billing checks.</p>
+          <div class="tech-tags">
+            <span>Google Apps Script</span><span>Clasp</span><span>VBA</span><span>Excel 365</span>
+          </div>
+        </article>
+
+        <article class="project-card glass">
+          <div class="project-header">
+            <span class="project-badge">Tooling</span>
+            <div class="project-links">
+              <a href="https://github.com/Anil1310" target="_blank" rel="noopener noreferrer" title="View Source">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">PDF 2 Excel Extraction Utility</h3>
+          <p class="project-desc">Desktop extraction utility parsing complex PDF tables, invoices, and unstructured reports into standardized clean tabular formats with data validation.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>PyPDF</span><span>Tabula</span><span>GUI</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="section experience-section" id="experience">
+      <div class="section-header">
+        <span class="section-tag">CAREER</span>
+        <h2 class="section-title">Experience &amp; Journey</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass">
+            <div class="timeline-header">
+              <h3>Data Analyst</h3>
+              <span class="timeline-company">Udaan.com</span>
+              <span class="timeline-date">Current</span>
+            </div>
+            <p>Driving operational efficiency and business metrics analysis across multi-channel supply and supply-chain operations. Designing automated ETL pipelines and executive performance dashboards.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content glass">
+            <div class="timeline-header">
+              <h3>Automation &amp; Reporting Specialist</h3>
+              <span class="timeline-company">Enterprise Solutions</span>
+              <span class="timeline-date">2020 – Present</span>
+            </div>
+            <p>Building high-leverage internal tools, Python scraping and ETL jobs, Google Workspace extensions, and cross-platform productivity automations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-card glass">
+        <h2 class="contact-title">Let's Connect &amp; Collaborate</h2>
+        <p class="contact-subtitle">Have a project, opportunity, or interested in optimizing your data infrastructure? Feel free to reach out.</p>
+
+        <div class="contact-actions">
+          <a href="https://github.com/Anil1310" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-github-profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>Follow on GitHub (@Anil1310)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Anil Kumar Chahar. Built with precision and deployed on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
